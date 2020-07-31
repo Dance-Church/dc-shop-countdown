@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Neuebit";
+  src: url("fonts/NeueBit-Bold.woff2") format("woff2"),
+    url("fonts/NeueBit-Bold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+}
+
+#countdown {
+  color: white;
+  font-size: 120px;
+  font-family: "Neuebit", Courier, monospace;
+  padding-left: 0px;
+}
+
+#countdown .part {
+  /* background-color: pink; */
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+#countdown .part.d {
+  width: 150px;
+}
+
+#countdown .part.m {
+  width: 160px;
+}
+
+@media screen and (max-width: 845px) {
+  #countdown {
+    font-size: 60px;
+  }
+
+  #countdown .part {
+    width: 70px;
+  }
+
+  #countdown .part.d {
+    width: 80px;
+  }
+
+  #countdown .part.m {
+    width: 80px;
+  }
+}
