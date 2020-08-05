@@ -39,11 +39,15 @@ body {
   padding-left: 0px;
 }
 
+#countdown .launching {
+  padding: 0 20px;
+}
+
 #countdown .part {
   /* background-color: pink; */
   display: inline-block;
   text-align: right;
-  width: 150px;
+  width: 155px;
 }
 
 #countdown .part.d {
@@ -51,7 +55,7 @@ body {
 }
 
 #countdown .part.m {
-  width: 160px;
+  width: 175px;
 }
 
 @media screen and (max-width: 845px) {
