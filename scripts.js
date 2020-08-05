@@ -11,8 +11,8 @@ window.onload = function () {
   });
 
   function countdownTimer() {
-    const difference = +new Date("2020-08-10") - +new Date();
-    let remaining = "Time's up!";
+    const difference = +new Date(2020, 7, 10, 0, 0, 0, 0) - +new Date();
+    let remaining = "Launching...";
 
     if (difference > 0) {
       const parts = {
